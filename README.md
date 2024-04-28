@@ -17,7 +17,7 @@ The console is the first segment of the AirBnB project at Holberton School that 
 * [Bugs](#bugs)
 * [Authors](#authors)
 * [License](#license)
-
+* [Contribution] (#New Contribution: Feature Addition - Batch Processing with all Command)
 ## Environment
 This project is interpreted/tested on Ubuntu 14.04 LTS using python3 (version 3.4.3)
 
@@ -156,7 +156,50 @@ No known bugs at this time.
 ## Authors
 Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
 Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)
+Wayne R Masakure - https://github.com/WayneRu95/AirBnB_clone_v3.git
+Hewitt Masakure - 
 
 Second part of Airbnb: Joann Vuong
 ## License
 Public Domain. No copy write protection. 
+
+
+##New Contribution: Feature Addition - Batch Processing with all Command
+Description:
+To enhance the usability and efficiency of the AirBnB Clone - The Console, a new feature has been added to the command interpreter. The all command now supports batch processing, allowing users to retrieve and manipulate multiple objects at once based on specified criteria.
+
+Functionalities of Batch Processing with all Command:
+Retrieve all instances of a specified class.
+Retrieve all instances across all classes.
+Filter instances based on specific attributes and values.
+Perform operations on the retrieved instances collectively (e.g., counting, computing statistics).
+Usage:
+The all command syntax has been expanded to accommodate batch processing:
+
+css
+all <class_name>
+css
+all
+php
+all <class_name> <attribute_name> <value>
+Examples of Batch Processing with all Command:
+Retrieve all instances of the class User:
+scss
+(hbnb) all User
+Retrieve all instances across all classes:
+scsc
+(hbnb) all
+Retrieve all instances of class Place with the attribute city having the value New York:
+scss
+
+(hbnb) all Place city New\ York
+File Modifications:
+console.py - Added functionality to the all command for batch processing.
+Environment:
+The project remains interpreted and tested on Ubuntu 14.04 LTS using Python 3 (version 3.4.3).
+
+Installation:
+No changes in installation steps.
+
+Note:
+This enhancement aims to streamline data retrieval and manipulation tasks, providing users with more flexibility and convenience in managing objects for the AirBnB website project.
